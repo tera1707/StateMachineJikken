@@ -53,6 +53,7 @@ internal class BeforeStart : IState
 
     public BeforeStart(StateMachine stateMachine)
     {
+        Console.WriteLine("起動しました。");
         _stateMachine = stateMachine;
     }
 
