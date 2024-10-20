@@ -3,11 +3,11 @@ using StateMachineJikken.StateMachine;
 
 namespace StateMachineJikken.State;
 
-internal class Idle : IState
+internal class IdleState : IState
 {
     private ErrorWatcherStateMachine _stateMachine;
 
-    public Idle(ErrorWatcherStateMachine stateMachine)
+    public IdleState(ErrorWatcherStateMachine stateMachine)
     {
         _stateMachine = stateMachine;
     }

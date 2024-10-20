@@ -28,9 +28,9 @@ internal class ErrorWatcherStateMachine
         _errorRecoverTimer = new System.Timers.Timer(TimeSpan.FromSeconds(5)) { AutoReset = false };
         _errorRecoverTimer.Elapsed += ErrorRecoverTimerEllapsed;
 
-        BeforeStart = new BeforeStart(this);
-        Idle = new Idle(this);
-        AbNormal = new AbNormal(this);
+        BeforeStart = new BeforeStartState(this);
+        Idle = new IdleState(this);
+        AbNormal = new AbNormalState(this);
 
         CurrentState = BeforeStart;
     }

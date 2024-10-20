@@ -3,11 +3,11 @@ using StateMachineJikken.StateMachine;
 
 namespace StateMachineJikken.State;
 
-internal class AbNormal : IState
+internal class AbNormalState : IState
 {
     private ErrorWatcherStateMachine _stateMachine;
 
-    public AbNormal(ErrorWatcherStateMachine stateMachine)
+    public AbNormalState(ErrorWatcherStateMachine stateMachine)
     {
         _stateMachine = stateMachine;
     }

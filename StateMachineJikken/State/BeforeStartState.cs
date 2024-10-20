@@ -3,11 +3,11 @@ using StateMachineJikken.StateMachine;
 
 namespace StateMachineJikken.State;
 
-internal class BeforeStart : IState
+internal class BeforeStartState : IState
 {
     private ErrorWatcherStateMachine _stateMachine;
 
-    public BeforeStart(ErrorWatcherStateMachine stateMachine)
+    public BeforeStartState(ErrorWatcherStateMachine stateMachine)
     {
         Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss.fff")} 起動しました。");
         _stateMachine = stateMachine;
